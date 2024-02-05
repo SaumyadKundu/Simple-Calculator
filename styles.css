@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #4CAF50, #2196F3); /* Replace with your desired gradient colors */
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 300px;
+    max-width: 100%;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Semi-transparent white border */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+}
+
+.display-area {
+    grid-column: span 4;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background for input/result */
+    height: 40px;
+    overflow: hidden;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent white border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    color: #333; /* Button text color */
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* More opaque white background on hover */
+    border: 1px solid rgba(255, 255, 255, 1); /* More opaque white border on hover */
+    color: #000; /* Button text color on hover */
+}
+
+#equalButton {
+    background-color: #2196F3; /* Change the color of the "=" button to blue */
+    color: #fff; /* Change the text color of the "=" button to white */
+}
+
+#resetButton {
+    grid-column: span 4;
+    grid-row: 2;
+    align-self: flex-start;
+}
