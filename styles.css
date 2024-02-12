@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom, #4CAF50, #2196F3); /* Replace with your desired gradient colors */
+    background: linear-gradient(to bottom, #4CAF50, #2196F3); 
 }
 
 #calculator {
@@ -15,10 +15,10 @@ body {
     max-width: 100%;
     margin: auto;
     padding: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.3); /* Semi-transparent white border */
+    border: 2px solid rgba(255, 255, 255, 0.3); 
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-    backdrop-filter: blur(10px); /* Apply the blur effect */
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
 }
 
 .display-area {
@@ -26,7 +26,7 @@ body {
     padding: 10px;
     font-size: 1.2em;
     text-align: right;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background for input/result */
+    background-color: rgba(255, 255, 255, 0.5); 
     height: 40px;
     overflow: hidden;
 }
@@ -34,23 +34,23 @@ body {
 button {
     padding: 10px;
     font-size: 1.2em;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent white border */
+    border: 1px solid rgba(255, 255, 255, 0.3); 
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, border 0.3s, color 0.3s;
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
-    color: #333; /* Button text color */
+    background-color: rgba(255, 255, 255, 0.7); 
+    color: #333; 
 }
 
 button:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* More opaque white background on hover */
-    border: 1px solid rgba(255, 255, 255, 1); /* More opaque white border on hover */
-    color: #000; /* Button text color on hover */
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 1px solid rgba(255, 255, 255, 1); 
+    color: #000; 
 }
 
 #equalButton {
-    background-color: #2196F3; /* Change the color of the "=" button to blue */
-    color: #fff; /* Change the text color of the "=" button to white */
+    background-color: #2196F3; 
+    color: #fff; 
 }
 
 #resetButton {

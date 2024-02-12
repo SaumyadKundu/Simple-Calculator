@@ -1,20 +1,20 @@
 let inputAreaElement = document.getElementById('inputArea');
 let expression = '';
 
-// Add event listener for keyboard input
+
 document.addEventListener('keydown', handleKeyboardInput);
 
 function handleKeyboardInput(event) {
     const key = event.key;
 
-    // Check if the pressed key is a numeric key or an operator
+    
     if (/[0-9/*\-+.]/.test(key)) {
         appendToInput(key);
     } else if (key === 'Enter') {
-        // Handle Enter key as the equal sign
+        // Handles Enter key as the equal sign
         calculateResult();
     } else if (key === 'Delete') {
-        // Handle Delete key as the reset button
+        // Handles Delete key as the reset button
         resetCalculator();
     }
 }
